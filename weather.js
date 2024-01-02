@@ -22,48 +22,48 @@ document.querySelector(".wind").innerHTML = data.wind.speed + " km/hr";
 
 if(data.weather[0].main == "Clouds")
 {
-    weatherIcon.src = "images/clouds.png";
+    weatherIcon.src = "./clouds.png";
 }
 else if(data.weather[0].main == "Clear")
 {
-    weatherIcon.src = "images/clear.png";
+    weatherIcon.src = "./clear.png";
 }
 else if(data.weather[0].main == "Rain")
 {
-    weatherIcon.src = "images/rain.png";
+    weatherIcon.src = "./rain.png";
 }
 else if(data.weather[0].main == "Drizzle")
 {
-    weatherIcon.src = "images/drizzle.png";
+    weatherIcon.src = "./drizzle.png";
 }
 else if(data.weather[0].main == "Mist")
 {
-    weatherIcon.src = "images/mist.png";
+    weatherIcon.src = "./mist.png";
 }
 document.querySelector(".weather").style.display ="block";
 document.querySelector(".error").style.display ="none";
 switch(data.weather[0].main)
 {
     case "Clouds":
-        document.getElementById("wrapper-bg").style.backgroundImage = "url(images/cloudy.gif)";
+        document.getElementById("wrapper-bg").style.backgroundImage = "url(./cloudy.gif)";
         break;
     case "Clear":
-        document.getElementById("wrapper-bg").style.backgroundImage = "url(images/clear.gif)";
+        document.getElementById("wrapper-bg").style.backgroundImage = "url(./clear.gif)";
         break;
     case "Rain":
-        document.getElementById("wrapper-bg").style.backgroundImage = "url(images/giphy.gif)";
+        document.getElementById("wrapper-bg").style.backgroundImage = "url(./giphy.gif)";
         break;
     case "Snow":
-        document.getElementById("wrapper-bg").style.backgroundImage = "url(images/snow.gif)";
+        document.getElementById("wrapper-bg").style.backgroundImage = "url(./snow.gif)";
         break;
     case "Drizzle":
-        document.getElementById("wrapper-bg").style.backgroundImage = "url(images/Drizzle.gif)";
+        document.getElementById("wrapper-bg").style.backgroundImage = "url(./Drizzle.gif)";
         break;
     case "Mist":
-        document.getElementById("wrapper-bg").style.backgroundImage = "url(images/Mist.gif)";
+        document.getElementById("wrapper-bg").style.backgroundImage = "url(./Mist.gif)";
         break;
     default: 
-        document.getElementById("wrapper-bg").style.backgroundImage = "url(images/)";
+        document.getElementById("wrapper-bg").style.backgroundImage = "url(./)";
         break;
 }
             }
